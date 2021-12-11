@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #8cb833;
+  height: 100vh;
+}
+
+:root {
+  --shadow-color: 80deg 60% 29%;
+  --shadow-elevation-low:
+    0.6px 0.5px 0.8px hsl(var(--shadow-color) / 0.41),
+    0.9px 0.8px 1.2px -1.7px hsl(var(--shadow-color) / 0.33),
+    2.2px 2px 2.9px -3.5px hsl(var(--shadow-color) / 0.25);
+  --shadow-elevation-medium:
+    0.6px 0.5px 0.8px hsl(var(--shadow-color) / 0.43),
+    1.5px 1.4px 2px -1.2px hsl(var(--shadow-color) / 0.37),
+    4.2px 3.9px 5.6px -2.3px hsl(var(--shadow-color) / 0.31),
+    10.9px 10.1px 14.5px -3.5px hsl(var(--shadow-color) / 0.25);
+  --shadow-elevation-high:
+    0.6px 0.5px 0.8px hsl(var(--shadow-color) / 0.4),
+    2.1px 2px 2.8px -0.5px hsl(var(--shadow-color) / 0.37),
+    4px 3.8px 5.4px -1px hsl(var(--shadow-color) / 0.34),
+    7.3px 6.7px 9.7px -1.5px hsl(var(--shadow-color) / 0.32),
+    12.7px 11.7px 16.8px -2px hsl(var(--shadow-color) / 0.29),
+    21.1px 19.6px 28.1px -2.5px hsl(var(--shadow-color) / 0.26),
+    33.4px 31px 44.4px -3px hsl(var(--shadow-color) / 0.23),
+    50.5px 46.9px 67.2px -3.5px hsl(var(--shadow-color) / 0.2);
+}
+
+.container {
+  position: relative;
+}
+
+.me-tea-pic {
+  position: absolute;
+  width: 361px;
+  height: 365px;
+  top: 20px;
+  left: 10px;
+  border: 1pt solid #f0ffd1;
+  z-index: -40;
+  border-radius: 4%;
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+@font-face {
+  font-family: "Auger Mono Light";
+  src: url("fonts/AugerMono/OTF/AugerMonoTEST-Light.otf");
+}
+
+.links-list {
+  color: #fff;
+  font-family: "Auger Mono Light";
+  font-size: 1.4rem;
+
+  position: absolute;
+  margin-left: 36px;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.menu-item:hover {
+  color: rgb(0, 81, 255);
+  cursor: pointer;
+}
+
+.line-from-bio {
+  position: absolute;
+  width: 400px;
+  top: 24px;
+  left: 63px;
+  stroke-width: 2px;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: "";
+  lineFromBio.style.animation = "extend 2s ease-in-out forwards;"
+}
+
+@keyframes extend {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.menu-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  margin: 25px 75px;
+
+  bottom: 0px;
+}
+
+@font-face {
+  font-family: "Bilibot Bold";
+  src: url("fonts/Bilibot/Bilibot-Bold.otf");
+}
+
+.wavy-orange-arrow {
+  width: 60%;
+  align-self: center;
+}
+.big-name {
+  font-size: 48pt;
+  font-family: "Bilibot Bold";
+  color: #f0ffd1;
+  -webkit-text-stroke: .0002px black;
+}
+
+@font-face {
+  font-family: "Cairo Dingbats";
+  src: url("fonts/Cairo_24.woff");
+}
+
+p {
+  font-family: "Cairo Dingbats";
+  font-size: 24px;
+}
