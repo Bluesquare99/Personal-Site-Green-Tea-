@@ -9,46 +9,174 @@ html {
 }
 
 body {
-  background-color: #8cb833;
+  background-color: #495448;
   height: 100vh;
-}
-
-:root {
-  --shadow-color: 80deg 60% 29%;
-  --shadow-elevation-low:
-    0.6px 0.5px 0.8px hsl(var(--shadow-color) / 0.41),
-    0.9px 0.8px 1.2px -1.7px hsl(var(--shadow-color) / 0.33),
-    2.2px 2px 2.9px -3.5px hsl(var(--shadow-color) / 0.25);
-  --shadow-elevation-medium:
-    0.6px 0.5px 0.8px hsl(var(--shadow-color) / 0.43),
-    1.5px 1.4px 2px -1.2px hsl(var(--shadow-color) / 0.37),
-    4.2px 3.9px 5.6px -2.3px hsl(var(--shadow-color) / 0.31),
-    10.9px 10.1px 14.5px -3.5px hsl(var(--shadow-color) / 0.25);
-  --shadow-elevation-high:
-    0.6px 0.5px 0.8px hsl(var(--shadow-color) / 0.4),
-    2.1px 2px 2.8px -0.5px hsl(var(--shadow-color) / 0.37),
-    4px 3.8px 5.4px -1px hsl(var(--shadow-color) / 0.34),
-    7.3px 6.7px 9.7px -1.5px hsl(var(--shadow-color) / 0.32),
-    12.7px 11.7px 16.8px -2px hsl(var(--shadow-color) / 0.29),
-    21.1px 19.6px 28.1px -2.5px hsl(var(--shadow-color) / 0.26),
-    33.4px 31px 44.4px -3px hsl(var(--shadow-color) / 0.23),
-    50.5px 46.9px 67.2px -3.5px hsl(var(--shadow-color) / 0.2);
 }
 
 .container {
   position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
-.me-tea-pic {
+.base-image {
   position: absolute;
-  width: 361px;
-  height: 365px;
-  top: 20px;
-  left: 10px;
-  border: 1pt solid #f0ffd1;
-  z-index: -40;
-  border-radius: 4%;
-  box-shadow: var(--shadow-elevation-medium);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.me-houston-mfa {
+  width: 442px;
+  border: 1px solid #fff7eb;
+  z-index: -999;
+}
+
+.bio-full {
+  position: absolute;
+  top: 80px;
+  transform: translateX(-79px);
+  background-color: #eee;
+  border: 4px solid #4c4c49;
+  width: 600px;
+  height: 300px;
+
+  font-size: 1.8rem;
+  padding: 20px 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bio-full-text strong {
+  color: #3873eb;
+}
+
+.projects-expanded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 442px;
+  height: 589px;
+  padding: 20px;
+  background-color: #eee;
+  border: 4px solid #4c4c49;
+  z-index: 4;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.projects-expanded h3 {
+  font-size: 2.4rem;
+  font-family: "Auger Mono Medium";
+  color: #3873eb;
+}
+.projects-expanded p {
+  font-size: 1.6rem;
+  font-family: "Auger Mono Regular";
+  color: #4c4c49;
+}
+
+.omnifood-description {
+  display: none;
+}
+
+.contact-deets {
+  position: absolute;
+  top: 30px;
+  left: -60px;
+  width: 560px;
+  height: 40px;
+  color: #eee;
+  background-color: #3873eb;
+  border: 2px solid #eee;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-family: "Auger Mono Light";
+}
+
+.phone-number {
+  padding-left: 15px;
+  font-family: "Auger Mono Light";
+  font-size: 1.4rem;
+  display: inline-block;
+  text-justify: left;
+}
+
+.email-address {
+  padding-right: 15px;
+  font-family: "Auger Mono Light";
+  font-size: 1.4rem;
+  display: inline-block;
+  text-justify: right;
+}
+
+.mobile-phone-icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  transform: rotate(30deg);
+  animation: bounce 2s ease-in-out infinite;
+  z-index: 5;
+}
+
+.email-icon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  transform: rotate(30deg);
+  animation: bounce 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+.me-drinking-coffee {
+  width: 245px;
+  border: 2px solid #c1d8a7;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bob {
+  width: 229px;
+  border: 1px solid #e39426;
+
+  position: absolute;
+  top: 5%;
+  right: 5%;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 @font-face {
@@ -56,23 +184,128 @@ body {
   src: url("fonts/AugerMono/OTF/AugerMonoTEST-Light.otf");
 }
 
+@font-face {
+  font-family: "Auger Mono Regular";
+  src: url("fonts/AugerMono/OTF/AugerMonoTEST-Regular.otf");
+}
+
+@font-face {
+  font-family: "Auger Mono Medium";
+  src: url("fonts/AugerMono/OTF/AugerMonoTEST-Medium.otf");
+}
+
 .links-list {
   color: #fff;
   font-family: "Auger Mono Light";
   font-size: 1.4rem;
 
-  position: absolute;
-  margin-left: 36px;
-  margin-top: 40px;
+  display: inline-block;
+  margin-top: 38px;
+  margin-left: 22px;
   list-style: none;
 }
 
-.menu-item:hover {
-  color: rgb(0, 81, 255);
+.menu-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.menu-item-box {
+  position: absolute;
+  fill: none;
+  border: 1px solid #fff;
+  height: 22px;
+}
+
+.bio-box {
+  transform: translate(-3px, -2px);
+  width: 32px;
+  opacity: 0;
+}
+
+.bio-box:hover {
+  opacity: 1;
   cursor: pointer;
 }
 
-.line-from-bio {
+.projects-box {
+  transform: translate(-3px, -2px);
+  width: 73px;
+  opacity: 0;
+}
+
+.projects-box:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.projects-full-list {
+  opacity: 0;
+  border: 1px solid #fff;
+
+  position: absolute;
+  left: 140px;
+  transform: translateY(-24px);
+}
+
+.projects-full-list ul {
+  padding: 8px 10px 8px 10px;
+  list-style: none;
+}
+
+.projects-full-list ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.projects-full-list ul li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.talkytalk-box {
+  transform: translate(-3px, -2px);
+  width: 90px;
+  opacity: 0;
+}
+
+.talkytalk-box:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.talky-talk-expanded {
+  visibility: hidden;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin: 5px 55px;
+  padding: 0px 10px;
+
+  bottom: 0px;
+}
+
+.wavy-orange-arrow {
+  width: 60%;
+  align-self: center;
+}
+.big-name {
+  font-size: 54pt;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
+  font-family: "Bilibot Regular";
+  font: outline;
+  color: #f0ffd1;
+}
+
+@font-face {
+  font-family: "Bilibot Regular";
+  src: url("fonts/Bilibot/Bilibot-Regular.otf");
+}
+
+/* .line-from-bio {
   position: absolute;
   width: 400px;
   top: 24px;
@@ -88,44 +321,4 @@ body {
   to {
     stroke-dashoffset: 0;
   }
-}
-
-.menu-item:not(:last-child) {
-  margin-bottom: 1.6rem;
-}
-
-.header {
-  position: fixed;
-  display: flex;
-  justify-content: space-evenly;
-  gap: 25px;
-  margin: 25px 75px;
-
-  bottom: 0px;
-}
-
-@font-face {
-  font-family: "Bilibot Bold";
-  src: url("fonts/Bilibot/Bilibot-Bold.otf");
-}
-
-.wavy-orange-arrow {
-  width: 60%;
-  align-self: center;
-}
-.big-name {
-  font-size: 48pt;
-  font-family: "Bilibot Bold";
-  color: #f0ffd1;
-  -webkit-text-stroke: .0002px black;
-}
-
-@font-face {
-  font-family: "Cairo Dingbats";
-  src: url("fonts/Cairo_24.woff");
-}
-
-p {
-  font-family: "Cairo Dingbats";
-  font-size: 24px;
-}
+} */

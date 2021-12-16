@@ -8,68 +8,211 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <?xml version="1.0" encoding="utf-8"?>
-    <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <svg
-      class="line-from-bio"
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px"
-      y="0px"
-      viewBox="0 0 702.38 48.75"
-      style="enable-background: new 0 0 702.38 48.75"
-      xml:space="preserve"
-    >
-      <style type="text/css">
-        .st0 {
-          clip-path: url(#SVGID_00000150076998084697023250000004983242855497237134_);
-          fill: none;
-          stroke: #f0ffd1;
-        }
-      </style>
-      <g>
-        <defs>
-          <rect id="SVGID_1_" width="702.38" height="48.75" />
-        </defs>
-        <clipPath
-          id="SVGID_00000175312862446812831510000004553509547491656622_"
-        >
-          <use xlink:href="#SVGID_1_" style="overflow: visible" />
-        </clipPath>
-        <polyline
-          style="
-            clip-path: url(#SVGID_00000175312862446812831510000004553509547491656622_);
-            fill: none;
-            stroke: #f0ffd1;
-          "
-          points="
-		0,48.25 41.99,48.25 41.99,0.5 701.88,0.5 701.88,34.82 	"
-        />
-      </g>
-    </svg>
-
     <div class="container">
-      <img
-        class="me-tea-pic"
-        src="images/me-tea-pic.jpg"
-        alt="Me at Te Company NYC!"
-      />
-
       <div class="links">
         <ul class="links-list">
-          <li class="menu-item menu-item-bio">bio</li>
-          <li class="menu-item">projects</li>
-          <li class="menu-item">talky talk</li>
+          <li class="menu-item menu-item-bio">
+            <div class="menu-item-box bio-box"></div>
+            bio
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-box projects-box"></div>
+            projects
+            <div class="projects-full-list">
+              <ul>
+                <li class="omnifood-button">Omnifood</li>
+                <li class="cpr-button">Coding Park Rangers</li>
+                <li class="resource-library-button">Resource Library</li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-box talkytalk-box"></div>
+            talky talk
+          </li>
         </ul>
+      </div>
+
+      <div class="base-image">
+        <img
+          class="me-houston-mfa"
+          src="images/me-houston-mfa.JPG"
+          alt="Me at Te Company NYC!"
+        />
+        <div class="bio-full">
+          <p class="bio-full-text">
+            <strong>Birthplace:</strong> Austin, Texas, USA
+            <br />
+            <br />
+            <strong>Interests:</strong> Making ice cream, drinking coffee,
+            Brutalist architecture.
+            <br />
+            <br />
+            <strong>Fun fact:</strong> I went by the name "Cody" one summer.
+            <br />
+            <br />
+            <strong>I want to:</strong> create fun, engaging websites; further
+            sustainability; connect people to critical resources. Get in touch!
+            Let's work together.
+          </p>
+        </div>
+        <div class="projects-expanded">
+          <div class="omnifood-description">
+            <h3>Omnifood</h3>
+            <p>
+              <br />
+              <br />
+              - Mock e-commerce site for a meal subscription company. - Built
+              with CSS, HTML, and some JS; deployed with Netflify.
+              <br />
+              <br />
+              - Implemented responsive design, smooth scrolling, image
+              compression, basic routing, and sticky nav bar.
+              <br />
+              <br />
+              - Ensured high contrast for visibility, checked performance with
+              Lighthouse.
+              <br />
+              <br />
+              <br />
+              Website
+              <br />
+              <br />
+              Github
+            </p>
+          </div>
+          <div class="cpr-description">
+            <h3>Coding Park Rangers</h3>
+            <p>
+              <br />
+              <br />
+              - Allows users to search National Parks by state and then find
+              info for each park containing a description, pictures, and
+              directions!
+              <br />
+              <br />
+              - Queried the National Park Service’s API and display info on
+              front-end. Used Java, Spring, and JavaScript!
+              <br />
+              <br />
+              - Built in three days by a small group; I coordinated and led
+              daily check-in sessions.
+              <br />
+              <br />
+              <br />
+              Website
+              <br />
+              <br />
+              Github
+            </p>
+          </div>
+          <div class="resource-library-description">
+            <h3>The Resource Library</h3>
+            <p>
+              <br />
+              <br />
+              - A lending library based in NYC that curates design and
+              architecture books and magazines.
+
+              <br />
+              <br />
+              - I expanded the site to include user sign-up and login
+              capabilities, a display of all inventory, monthly billing, and
+              created a pipeline for owner to easily upload new acquisitions.
+              <br />
+              <br />
+              - Tech involved JS, HTML, & CSS on frontend; Node and React to
+              handle backend, and integration with Stripe and Algolia APIs.
+              Website Github
+              <br />
+              <br />
+              <br />
+              Website
+              <br />
+              <br />
+              Github
+            </p>
+          </div>
+        </div>
+        <div class="talky-talk-expanded">
+          <svg
+            class="mobile-phone-icon"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="6"
+              y="3"
+              width="12"
+              height="19"
+              rx="1"
+              stroke="#000"
+              fill="#ccc"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></rect>
+            <path
+              d="M12.0161 18.0161L12 18"
+              stroke="#000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <div class="contact-deets">
+            <p class="phone-number">(512)775-9300</p>
+            <p class="email-address">msmccready@gmail.com</p>
+          </div>
+          <svg
+            class="email-icon"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="1"
+              stroke="#000"
+              fill="#ccc"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></rect>
+            <path
+              d="M20 5.5L12 13L4 5.5"
+              stroke="#000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <img
+        class="me-drinking-coffee"
+        src="images/me-drinking-coffee.jpeg"
+        alt="Me drinking coffee!"
+      />
+
+      <img class="bob" src="images/bob.jpg" alt="A funny construction photo!" />
+
+      <div class="header">
+        <h1 class="big-name big-first-name" id="appear">Max</h1>
+        <img class="wavy-orange-arrow" src="images/Arrow.png" />
+        <h1 class="big-name big-last-name">McCready</h1>
       </div>
     </div>
 
-    <div class="header">
-      <h1 class="big-name">Max</h1>
-      <img class="wavy-orange-arrow" src="images/Arrow.png" />
-      <h1 class="big-name">McCready</h1>
-    </div>
+    <script async src="https://basicons.xyz/embed.js"></script>
   </body>
 </html>
