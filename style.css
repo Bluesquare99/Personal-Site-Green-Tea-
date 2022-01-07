@@ -81,6 +81,11 @@ body {
   display: none;
 }
 
+.link-project {
+  text-decoration: none;
+  color: #3873eb;
+}
+
 .contact-deets {
   position: absolute;
   top: 30px;
@@ -133,6 +138,7 @@ p {
   transform: rotate(30deg);
   animation: bounce 2s ease-in-out infinite;
   animation-delay: 0.5s;
+  z-index: 5;
 }
 
 @keyframes bounce {
